@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termo de Conhecimento de Riscos - EcoAção</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div id="form-content" class="form-container">
+        <!-- Header -->
+        <div class="header-container">
+            <div class="header-content">
+                <div class="company-info">
+                    <div class="logo">
+                        <span>ECO</span>
+                    </div>
+                    <div class="company-text">
+                        <h1>ECOAÇÃO</h1>
+                        <p>Turismo de Aventura</p>
+                    </div>
+                </div>
+                <div class="document-info">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <strong>Código:</strong>
+                            <span>FO-743-A</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Data:</strong>
+                            <span>12/04/2016</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Revisão:</strong>
+                            <span>01</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title-section">
+                <p><strong>TÍTULO: FO-743-A- Termo de conhecimento de Riscos - EcoAção</strong></p>
+            </div>
+            <div class="instruction-section">
+                <p><strong>LEIA COM ATENÇÃO E PREENCHA SEUS DADOS CORRETAMENTE</strong></p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- First text section -->
+            <div class="text-section">
+                <p class="justified-text">
+                    Rafting, KR e Kayak Duplo são atividades realizadas no trecho baixo do Rio Jacaré Pepira e são realizadas através de descida em corredeiras (classes I a IV), em botes/embarcações, individualmente monitorados. Tais atividades podem ser desenvolvidas por praticantes iniciantes, assim como pelos mais experientes. A equipe da Ecoação Turismo de Aventura é formada por guias altamente qualificados, formados pelo Rescue 3 Internacional, referência mundial de resgate em corredeiras, além de possuírem cursos de primeiros socorros e resgate, sempre atualizados. Nossa prioridade é a segurança. No entanto, qualquer modalidade de esporte de aventura apresenta riscos. Nessas modalidades - Rafting, KR e Kayak Duplo - é possível que o praticante caia na água, tenha que nadar nas corredeiras, expondo-se a ferimentos e até outras situações de risco. Por isso, a atividade escolhida inclui uma aula sobre a mesma, na qual os instrutores apresentam os equipamentos e procedimentos envolvidos na sua prática. O único equipamento obrigatório não oferecido pela empresa Ecoação Turismo de Aventura é o calçado, que deve estar bem justo ao pé (recomenda-se sapatilha, papete ou tênis). Os demais equipamentos, como capacete e colete salva-vidas, são entregues antes do início da atividade e não podem ser retirados em momento algum do percurso. Informamos ainda que o instrutor é a única autoridade dentro do bote, devendo suas instruções serem seguidas por todos os que nele estão. Orientamos que o instrutor tem o dever de vetar, de acordo com seu conhecimento profissional, a participação de indivíduos incapacitados à prática da atividade pelo uso de bebidas alcoólicas ou entorpecentes, que podem pôr em risco sua própria segurança, assim como dos demais integrantes. Como somos uma empresa preocupada com o atendimento de excelência e o atendimento a toda a legislação do Turismo de Aventura, solicitamos o preenchimento do Termo de Responsabilidade que segue. Esclarecemos que durante todo o passeio há a cobertura de seguro pela Corretora Triade Seguros, sistema ACE Seguradora S.A., CNPJ 3.502.099/0001-18.
+                </p>
+            </div>
+
+            <!-- Declaration section -->
+            <div class="declaration-section">
+                <h2 class="section-title">DECLARAÇÃO</h2>
+                <div class="text-section">
+                    <p class="justified-text">
+                        Declaro para os devidos fins que participo da atividade de <span class="underline-field">Rafting</span> por livre e espontânea vontade e que estou ciente dos riscos envolvidos na prática desse esporte de aventura, conforme orientação recebida, através de uma aula e através de documento. Isento a empresa Ecoação Turismo de Aventura de qualquer responsabilidade por eventuais danos causados à minha integridade física ou de meus equipamentos pessoais durante a prática da referida atividade.
+                    </p>
+                </div>
+
+                <!-- Photo authorization -->
+                <div class="authorization-section">
+                    <div class="radio-option">
+                        <input type="radio" name="photoAuth" id="autorizo" value="autorizo">
+                        <label for="autorizo" class="justified-text">
+                            AUTORIZO a eventual veiculação, por esta empresa, de imagens colhidas neste evento, para fins promocionais, bem como a inserção de imagens em sua página na internet, Instagram, Facebook e outras oportunidades de divulgação.
+                        </label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="photoAuth" id="nao-autorizo" value="nao-autorizo">
+                        <label for="nao-autorizo" class="justified-text">
+                            NÃO autorizo o uso de fotos e vídeos, colhidas nesse evento, para fins promocionais, bem como a inserção de imagens em sua página da internet Instagram, Facebook e outras oportunidades de divulgação.
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form fields -->
+            <form id="adventureForm" class="form-fields">
+                <div class="field-row">
+                    <div class="field-group">
+                        <label>Nome:</label>
+                        <input type="text" name="nome" class="form-input">
+                    </div>
+                    <div class="field-group">
+                        <label>Data de Nasc:</label>
+                        <input type="date" name="dataNasc" class="form-input">
+                    </div>
+                </div>
+
+                <div class="field-row">
+                    <div class="field-group">
+                        <label>CPF:</label>
+                        <input type="text" name="cpf" class="form-input">
+                    </div>
+                    <div class="field-group">
+                        <label>RG:</label>
+                        <input type="text" name="rg" class="form-input">
+                    </div>
+                    <div class="field-group">
+                        <label>Celular:</label>
+                        <input type="tel" name="celular" class="form-input">
+                    </div>
+                </div>
+
+                <div class="field-row">
+                    <div class="field-group">
+                        <label>Fixo:</label>
+                        <input type="tel" name="fixo" class="form-input">
+                    </div>
+                    <div class="field-group">
+                        <label>E-mail:</label>
+                        <input type="email" name="email" class="form-input">
+                    </div>
+                </div>
+
+                <div class="field-row">
+                    <div class="field-group full-width">
+                        <label>Endereço:</label>
+                        <input type="text" name="endereco" class="form-input">
+                    </div>
+                </div>
+
+                <div class="field-row">
+                    <div class="field-group">
+                        <label>Cidade:</label>
+                        <input type="text" name="cidade" class="form-input">
+                    </div>
+                    <div class="field-group">
+                        <label>Estado:</label>
+                        <input type="text" name="estado" class="form-input">
+                    </div>
+                    <div class="field-group">
+                        <label>CEP:</label>
+                        <input type="text" name="cep" class="form-input">
+                    </div>
+                </div>
+
+                <!-- Minors section with two lines -->
+                <div class="minors-section">
+                    <div class="minors-header">
+                        <label><strong>MENORES:</strong></label>
+                    </div>
+                    <div class="field-row">
+                        <div class="field-group">
+                            <label>Nome:</label>
+                            <input type="text" name="nomeMenor1" class="form-input">
+                        </div>
+                        <div class="field-group">
+                            <label>Data de Nasc:</label>
+                            <input type="date" name="dataNascMenor1" class="form-input">
+                        </div>
+                    </div>
+                    <div class="field-row">
+                        <div class="field-group">
+                            <label>Nome:</label>
+                            <input type="text" name="nomeMenor2" class="form-input">
+                        </div>
+                        <div class="field-group">
+                            <label>Data de Nasc:</label>
+                            <input type="date" name="dataNascMenor2" class="form-input">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question A with clickable Yes/No -->
+                <div class="question-section">
+                    <div class="question-header">
+                        <label>A) Possui restrições médicas e de saúde?</label>
+                        <div class="yes-no-options">
+                            <label class="radio-label">
+                                <input type="radio" name="restricoesMedicasRadio" value="sim">
+                                <span class="radio-text">( ) Sim</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="restricoesMedicasRadio" value="nao">
+                                <span class="radio-text">( ) Não</span>
+                            </label>
+                        </div>
+                        <span>Quais?</span>
+                    </div>
+                    <div class="question-input-lines">
+                        <input type="text" name="restricoesMedicas1" class="form-input">
+                        <input type="text" name="restricoesMedicas2" class="form-input">
+                    </div>
+                </div>
+
+                <!-- Question B with clickable Yes/No -->
+                <div class="question-section">
+                    <div class="question-header">
+                        <label>B) Possui alguma restrição de locomoção ou necessita de alguma atenção especial?</label>
+                        <div class="yes-no-options">
+                            <label class="radio-label">
+                                <input type="radio" name="restricoesLocomocaoRadio" value="sim">
+                                <span class="radio-text">( ) Sim</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="restricoesLocomocaoRadio" value="nao">
+                                <span class="radio-text">( ) Não</span>
+                            </label>
+                        </div>
+                        <span>Quais?</span>
+                    </div>
+                    <div class="question-input-lines">
+                        <input type="text" name="restricoesLocomocao1" class="form-input">
+                        <input type="text" name="restricoesLocomocao2" class="form-input">
+                    </div>
+                </div>
+
+                <div class="field-row">
+                    <div class="field-group full-width">
+                        <label>Alguma experiência: INFORMAR AO CONDUTOR</label>
+                        <input type="text" name="informarCondutor" class="form-input">
+                    </div>
+                </div>
+
+                <div class="field-row">
+                    <div class="field-group full-width">
+                        <label>Tem Plano de Saúde? Qual:</label>
+                        <input type="text" name="planoSaude" class="form-input">
+                    </div>
+                </div>
+
+                <!-- Emergency contact in one line -->
+                <div class="emergency-section">
+                    <div class="field-row emergency-row">
+                        <div class="field-group emergency-name">
+                            <label>Quem avisar em caso de urgência? Nome:</label>
+                            <input type="text" name="emergenciaNome" class="form-input">
+                        </div>
+                        <div class="field-group emergency-relation">
+                            <label>Parentesco:</label>
+                            <input type="text" name="parentesco" class="form-input">
+                        </div>
+                        <div class="field-group emergency-phone">
+                            <label>Telefone:</label>
+                            <input type="tel" name="telefone" class="form-input">
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Signature section -->
+            <div class="signature-section">
+                <div class="date-location">
+                    <span>BROTAS,</span>
+                    <span class="underline-short">___</span>
+                    <span>de</span>
+                    <span class="underline-medium">___________</span>
+                    <span>de</span>
+                    <span class="underline-short">___</span>
+                </div>
+
+                <div class="signature-line">
+                    <div class="signature-underline">____________________________</div>
+                    <p><strong>ASSINATURA</strong></p>
+                </div>
+
+                <div class="legal-notice">
+                    <p>
+                        <strong>Atenção:</strong> Quem assina este documento público ou particular, declarando que dele devem constar, ou nele inserir ou fazer inserir declaração falsa ou diversa da que deveria ser escrita, com o fim de prejudicar direito, criar obrigação ou alterar a verdade sobre fato juridicamente relevante: Pena - reclusão, de um a cinco anos, e multa, se o documento é público, e reclusão de um a três anos, e multa, se o documento é particular.
+                    </p>
+                </div>
+            </div>
+
+            <!-- PDF Button at the end -->
+            <div class="pdf-button-container">
+                <button onclick="generatePDF()" class="btn-pdf">
+                    <span>📄</span> Salvar PDF
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
